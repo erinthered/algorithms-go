@@ -2,7 +2,7 @@ package binary
 
 import "fmt"
 
-// BinarySearchRecursive returns true if the desired value is in the given data array or false if it is not
+// binarySearchRecursive returns true if the desired value is in the given data array or false if it is not
 func binarySearchRecursive(data []int, value int) bool {
 	if len(data) == 0 {
 		return false

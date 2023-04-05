@@ -1,3 +1,3 @@
-module algorithms
+module algorithms-go
 
 go 1.20
