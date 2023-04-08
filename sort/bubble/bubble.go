@@ -4,8 +4,8 @@ import "fmt"
 
 func bubbleSort(arr []int) {
 	for i := 0; i < len(arr); i++ {
-		for j := 0; j < len(arr); j++ {
-			if (j+1) < len(arr) && arr[j+1] < arr[j] {
+		for j := 0; j < len(arr)-1; j++ {
+			if arr[j+1] < arr[j] {
 				arr[j], arr[j+1] = arr[j+1], arr[j]
 			}
 		}
