@@ -2,6 +2,7 @@ package main
 
 import (
 	"algorithms-go/sort/bubble"
+	"algorithms-go/sort/merge"
 	"algorithms-go/sort/selection"
 	"fmt"
 )
@@ -15,6 +16,9 @@ func main() {
 
 	fmt.Println("Testing selection sort")
 	testSort(selection.Sort)
+
+	fmt.Println("Testing merge sort")
+	testSort(merge.Sort)
 }
 
 func testSort(fun sortFunction) {
@@ -42,6 +46,6 @@ func testSort(fun sortFunction) {
 				break
 			}
 		}
-		fmt.Printf("Sorted correctly: %t\t:: Output: %v\n\n", sorted, input)
+		fmt.Printf("Sorted correctly: %t\t:: Output: %v\n\n", sorted, output)
 	}
 }
