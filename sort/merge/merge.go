@@ -1,5 +1,6 @@
 package merge
 
+// Sort slice of ints using merge sort, O(nlogn) runtime
 func Sort(arr []int) []int {
 	if len(arr) <= 1 {
 		return arr
