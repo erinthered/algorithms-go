@@ -2,6 +2,7 @@ package main
 
 import (
 	"algorithms-go/sort/bubble"
+	"algorithms-go/sort/insertion"
 	"algorithms-go/sort/merge"
 	"algorithms-go/sort/selection"
 	"fmt"
@@ -10,6 +11,9 @@ import (
 type sortFunction func([]int) []int
 
 func main() {
+	fmt.Println("Testing insertion sort")
+	testSort(insertion.Sort)
+
 	fmt.Println("Testing bubble sort")
 	testSort(bubble.SortIterative)
 	testSort(bubble.SortRecursive)
