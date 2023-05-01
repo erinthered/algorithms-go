@@ -5,6 +5,8 @@ import (
 )
 
 // Sort uses a heap to sort the elements of an array
+// Worst, average, and best runtimes all O(nlogn),
+// note that this implimentation of heap sort is an in place sort but is not stable
 func Sort(arr []int) []int {
 	// build a max heap from array
 	buildMaxHeap(arr)
