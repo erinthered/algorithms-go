@@ -13,6 +13,7 @@ func main() {
 	fmt.Println("Testing bubble sort")
 	testSort(bubble.SortIterative)
 	testSort(bubble.SortRecursive)
+	testSort(bubble.SortRecursive)
 
 	fmt.Println("Testing selection sort")
 	testSort(selection.Sort)
