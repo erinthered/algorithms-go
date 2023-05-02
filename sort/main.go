@@ -5,6 +5,7 @@ import (
 	"algorithms-go/sort/heap"
 	"algorithms-go/sort/insertion"
 	"algorithms-go/sort/merge"
+	"algorithms-go/sort/quick"
 	"algorithms-go/sort/selection"
 	"fmt"
 )
@@ -28,6 +29,9 @@ func main() {
 
 	fmt.Println("Testing heap sort")
 	testSort(heap.Sort)
+
+	fmt.Println("Testing quick sort")
+	testSort(quick.Sort)
 }
 
 func testSort(fun sortFunction) {
